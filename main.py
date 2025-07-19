@@ -59,4 +59,5 @@ def coleccion():
                    if img.endswith(('.png', '.jpg', '.jpeg'))]
     return render_template("coleccion.html", images=image_files)
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
