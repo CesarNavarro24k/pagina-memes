@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/coleccion.css">
+    <title>Coleccion</title>
+</head>
+<body>
+    <h1>Colección de Memes</h1>
+<div style="display: flex; flex-wrap: wrap;">
+    {% for image in images %}
+        <div style="margin: 10px;">
+            <img src="{{ url_for('static', filename='img/' ~ image) }}"  width="400">
+        
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>
+
